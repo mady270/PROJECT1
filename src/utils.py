@@ -149,7 +149,7 @@ def sign_prediction(out_emb, in_emb, train_edges, test_edges):
     return auc_score, macro_f1_score
 
 
-@ignore_warnings(category=ConvergenceWarning)
+
 def link_prediction(out_emb, in_emb, train_edges, test_edges, train_edges_null, test_edges_null):
     """
     Evaluate the performance on the link prediction task.
