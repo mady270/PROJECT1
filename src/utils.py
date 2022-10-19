@@ -95,7 +95,7 @@ def save_null_edge_list(file_path, edges):
             edge = list(map(str, edge))
             f.write('\t'.join(edge) + '\n')
 
-@ignore_warnings(category=ConvergenceWarning)
+
 def sign_prediction(out_emb, in_emb, train_edges, test_edges):
     """
     Evaluate the performance on the sign prediction task.
